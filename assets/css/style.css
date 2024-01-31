@@ -1,0 +1,18 @@
+/* Wildcard asterisk to override defaults from the browser*/
+* {
+    padding: 0;
+    margin: 1;
+    box-sizing: border-box;
+}
+/* header color */
+header {
+    background-color: white;
+}
+/* main color*/
+main {
+    background-color: blue;
+}
+/* footer color*/
+footer {
+    background-color: green;
+}
