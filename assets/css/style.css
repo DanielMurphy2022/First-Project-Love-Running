@@ -1,3 +1,6 @@
+/* Google fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
 /* Wildcard asterisk to override defaults from the browser*/
 * {
     padding: 0;
@@ -12,7 +15,7 @@ body {
     flex-direction: column;
     /* Generic style */
     color: #7a7a7a;
-
+    font-family: 'Lato', sans-serif;
 }
 /* header color */
 header {
