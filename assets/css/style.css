@@ -4,7 +4,7 @@
 /* Wildcard asterisk to override defaults from the browser*/
 * {
     padding: 0;
-    margin: 1;
+    margin: 0;
     box-sizing: border-box;
 }
 
@@ -19,7 +19,7 @@ body {
 }
 /* header color */
 header {
-    background-color: white;
+    background-color: orange;
 }
 h1 {
     font-family: 'Oswald', sans-serif;
