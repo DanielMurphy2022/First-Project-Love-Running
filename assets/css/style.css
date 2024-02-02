@@ -1,23 +1,24 @@
 /* Google fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
-/* Wildcard asterisk to override defaults from the browser*/
+/* Asterisk wildcard selector to override default styles added by the browser */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-/* General style rules */
+/* General styles */
 body {
-    min-height: 120vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    /* Generic style */
-    color: #7a7a7a;
+    /* Generic project styles */
+    color: #3a3a3a;
     font-family: 'Lato', sans-serif;
 }
-/* header color */
+
+/* Header */
 header {
     background-color: #ffffff;
     padding: 0 1rem;
@@ -29,14 +30,16 @@ header {
     justify-content: space-between;
     align-items: baseline;
 }
+
 header a {
     text-decoration: none;
     color: inherit;
 }
+
 h1 {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
-    letter-spacing: 2pxx;
+    letter-spacing: 2px;
     color: #252525;
 }
 
@@ -46,7 +49,7 @@ h1 {
     list-style-type: none;
 }
 
-#menu > li {
+#menu>li {
     margin-bottom: 1em;
 }
 
@@ -54,7 +57,7 @@ h1 {
     border-bottom: 1px solid #3a3a3a;
 }
 
-/* Navbar dropdown */
+/* Navbar styles with dropdown toggle */
 nav {
     position: absolute;
     background-color: #ffffff;
@@ -66,7 +69,7 @@ nav {
     top: 100%;
 }
 
-/* nav toggle */
+/* Nav toggle */
 #nav-toggle:checked~nav {
     display: block;
 }
@@ -78,35 +81,47 @@ nav {
 .nav-toggle-label {
     font-size: 2rem;
 }
-/* main color*/
+
+/* Main content */
 main {
-    background-color: blue;
+    background-color: lightblue;
+    /* Make main element take up any surplus space to push footer down */
+    flex: 1 0 auto;
     margin-top: 47px;
 }
-/* footer color*/
+
+/* Footer */
 footer {
-    background-color: green;
-    /* Makes main element take up any surplus space to push footer down */
-    flex: 1 0 auto;
+    background-color: orange;
 }
 
-/* Media query for tablet */
-@media screen and (min-width: 760px){
-    /* header */
+/* Media query: tablets and larger (768px and up) */
+@media screen and (min-width: 768px) {
+
+    /* Header */
     nav {
         display: block;
         position: relative;
         box-shadow: none;
         width: fit-content;
-        padding-right: 1rem
-}
-#menu {
-    display: flex;
-}
-#menu > li {
-    padding-left: 1rem;
-}
-.nav-toggle-label {
-    display: none;
-}
+        padding-right: 1rem;
+    }
+
+    #menu {
+        display: flex;
+    }
+
+    #menu>li {
+        padding-left: 1rem;
+    }
+
+    .nav-toggle-label {
+        display: none;
+    }
+
+    #logo {
+        font-size: 200%;
+        line-height: 75px;
+        margin: 0 0.5rem;
+    }
 }
